@@ -71,7 +71,7 @@ bottoneAnnulla.addEventListener('click',
     // Reset campi da compilare
     document.getElementById('nome').value = '';
     document.getElementById('km').value = '';
-    document.getElementById('fascia-eta').value = ('Minorenne');
+    document.getElementById('fascia-eta').value = ('minorenne');
 
     // Reset biglietto
     document.getElementById('offerta-applicata').innerHTML = '';
