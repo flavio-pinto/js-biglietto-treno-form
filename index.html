@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
     <div class="wrapper">
-        <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
+        <h1 class="title mgn-btm-40">Calcola il prezzo del tuo biglietto</h1>
 
-        <div class="dati-input">
+        <div class="dati-input mgn-btm-40">
             <div class="row">
                 <div class="col">
                     <label for="nome">Nome e Cognome</label>
                     <input id="nome" type="text"
                            name="nome"
-                            placeholder="inserisci il tuo nome"
+                            placeholder="Inserisci il tuo nome"
                     >
                 </div>
                 <div class="col">
                     <label for="km">Km da percorrere</label>
                     <input id="km" type="number" min="1" max="300"
                            name="km"
-                            placeholder="inserisci i Km"
+                            placeholder="Inserisci i Km"
                     >
                 </div>
                 <div class="col">
@@ -37,52 +39,26 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row align-center">
                 <button class="btn" id="bottoneGenera">Genera</button>
                 <button class="btn" id="bottoneAnnulla">Annulla</button>
             </div>
         </div>
 
-        <section id="biglietto" class="hidden">
-            <h2 class="title">Il tuo biglietto</h2>
-
-            <h3>Dettagli passeggeri</h3>
-
-            <div class="contenuti">
-                <div class="nome">
-                    <h2>Nome Passeggero</h2>
-                    <h3 id="nome-passeggero"></h3>
-                </div>
-                <div class="offerta">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Offerta</th>
-                                <th>Carrozza</th>
-                                <th>Codice CP</th>
-                                <th>Costo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span id="offerta-applicata"></span>
-                                </td>
-                                <td>
-                                    <span id="carrozza"></span>
-                                </td>
-                                <td>
-                                    <span id="codice-cp"></span>
-                                </td>
-                                <td>
-                                    <span id="costo"></span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div id="biglietto" class="hidden">
+            <div class="left-area">
+                <div class="ticket-header"><h2>Galaxy Express 999</h2></div>
+                <div><h5>NOME PASSEGGERO:</h5><span id="nome-passeggero"></span></div>
+                <div><h5>OFFERTA:</h5><span id="offerta-applicata"></span></div>
+                <div><h5>CARROZZA:</h5><span id="carrozza"></span></div>
+                <div><h5>CODICE CP:</h5><span id="codice-cp"></span></div>
+                <div><h5>COSTO:</h5><span id="costo"></span></div>
             </div>
-        </section>
+
+            <div class="right-area">
+                9 - 9 - 9
+            </div>
+        </div>
     </div>
 
     <!-- JS -->

@@ -4,10 +4,113 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  src: url(../fonts/Ticketing.ttf);
+  font-family: Ticketing;
+}
+
+@font-face {
+  src: url(../fonts/Cyberotica-Bold.ttf);
+  font-family: Cyberotica;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/background-stars.gif);
+  color: white;
+  padding: 40px;
+  height: 100vh;
+}
+
+/* UTILITIES */
 .show {
     opacity: 1;
+    transition: linear 2s;
 }
 
 .hidden {
     opacity: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.mgn-btm-40 {
+  margin-bottom: 40px;
+}
+/* STYLES */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.dati-input {
+  text-align: right;
+}
+
+.dati-input label {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.dati-input input[type=text],
+.dati-input input[type=number],
+select {
+  padding: 12px 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.dati-input .row button {
+  width: 150px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+
+#biglietto {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 800px;
+}
+
+.left-area {
+  flex-basis: 50%;
+  font-size: 20px;
+  font-family: Ticketing;
+  background-image: url(../img/background-pattern.png);
+  border-right: 1px solid white;
+  border-right-style: dashed;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.left-area .ticket-header h2 {
+  font-family: Cyberotica;
+  font-size: 32px;
+}
+
+.left-area h5 {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.right-area {
+  flex-basis: 50%;
+  background-image: url(../img/background-galaxy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  writing-mode: vertical-rl;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 40px;
+  text-align: center;
 }
